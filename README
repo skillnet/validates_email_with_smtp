@@ -1,0 +1,15 @@
+= ValidatesEmailWithSmtp
+
+Email validation using SMTP.
+
+ValidatesEmailWithSmtp provides a method to validate email address
+field against the mail server, which would receive the mail in case
+you wanted to send one.  The original idea was shamelessly ripped from
+Webdigi blog entry
+<a href="http://www.webdigi.co.uk/blog/2009/how-to-check-if-an-email-address-exists-without-sending-an-email/">
+How to check if an email address exists without sending an email?</a>.
+
+Validation actually almost sends mail.  It finds out the mail server
+for the domain part of validated address, connects to server and
+proceeds to sending mail up untill it finds out what the server has to
+say about the recipient address.  Then it quits the connection.
