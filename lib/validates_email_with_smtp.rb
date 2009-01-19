@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/mail_check'
 
-module VaildatesEmailWithSmtp
+module ValidatesEmailWithSmtp
   def self.included(base)
     base.class_eval do
       extend ClassMethods
